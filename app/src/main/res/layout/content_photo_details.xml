@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_photo_details"
+    tools:context=".PhotoDetailsActivity"
+    android:layout_marginBottom="16dp"
+    android:padding="8dp"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/photo_author"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+
+                ></TextView>
+
+            <ImageView
+                android:id="@+id/photo_image"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/placeholder"
+                ></ImageView>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+
+                ></TextView>
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/photo_tags"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+
+                ></TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>
